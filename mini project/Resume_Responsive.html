@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prithivanan Resume</title>
+    <link rel="icon" type="image/png" sizes="150x150" href="./assets/img/logo.jpg">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="./assets/datatables.min.css">
+    <link rel="stylesheet" href="./assets/icon/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/sweetalert2.min.css">
+
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/datatables.min.js"></script>
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script src="./assets/icon/fontawesome-all.min.js"></script>
+    <script src="./assets/sweetalert2.all.min.js"></script>
+
+</head>
+<body>
+    <div class="container" id="page_layout">
+        <div class="header">            
+            <div class="row">
+                <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                    <div class="row name_row" >
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                        <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                            <p style="color: rgb(9, 9, 95); font-size: 2rem;"><b id="name" ></b></p>                
+                        </div>
+                    </div>
+                    <div class="row phone_row">
+                        <div class=" col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" ><i class="fa-solid fa-phone text-primary"></i></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 d-flex text-primary"  style="gap: 2rem;" >
+                            <p id="phone"></p>
+                            <p id="alternat_phone" style="display: none;"></p>
+                        </div>
+                    </div>
+                    <div class="row e_mail_row" >
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"><i class="fa-solid fa-envelope text-primary"></i></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 text-primary" id="email" ></div>
+                    </div>
+                    <div class="row address_row">
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"><i class="fa-solid fa-house text-primary"></i></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 text-primary d-flex" >
+                            <p id="address"></p>
+                            <p id="native_address" style="display: none;"></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                    <img src="./assets/img/image.jpg"  id="profile_picture">                    
+                </div>
+            </div>
+            <div class="row border_top" id="cr_objective"> 
+                <div class="row">              
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+                        <p style="font-size: 1.5rem; "><b> CAREER OBJECTIVE </b></p>
+                    </div>                    
+                </div> 
+                <div class="row">
+                    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                    <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
+                        <p id="career_objective_content">To effectively utilize my skills in my field for the development of myself and for
+                            the company in which I am working with the utmost dedication.</p>
+                    </div>
+                </div>
+                
+            </div> 
+            <div class="row border_top">                
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" id="left_grid" >
+                    <div class="row d-flex justify-content-center" style="font-size: 1.3rem;">
+                       <b>WEB INTERFACE</b>                        
+                    </div>
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                        <b>LANGUAGES</b>                        
+                     </div>  
+                    <div class="row " style="font-size: 1.1rem;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ">                        
+                            <ul>
+                                <li><i class="fa-brands fa-html5"></i> HTML 5</li>
+                                <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                                <li><i class="fa-brands fa-bootstrap"></i> Bootstrap 4</li>
+                                <li><i class="fa-brands fa-js"></i> Java Script</li>
+                                <li><i class="fa-solid fa-scroll"></i>jQuery</li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                        <b>FONTS</b>                        
+                    </div> 
+                    <div class="row " style="font-size: 1.1rem;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ">                        
+                            <ul>
+                                <li><i class="fa-solid fa-font-awesome"></i> Fontawesome</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                        <b>TABLES</b>                        
+                    </div> 
+                    <div class="row " style="font-size: 1.1rem;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ">                        
+                            <ul>
+                                <li><i class="fa-solid fa-table"></i> Data tables</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                        <b>ALERT</b>                        
+                    </div> 
+                    <div class="row " style="font-size: 1.1rem;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ">                        
+                            <ul>
+                                <li><i class="fa-solid fa-bell"></i>Sweet Alert 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="font-size: 1.5rem;">
+                        <b>BACK END</b>                        
+                    </div>
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                         <b>LANGUAGES</b>                        
+                    </div>
+                    <div class="row " style="font-size: 1.1rem;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ">                        
+                            <ul>
+                                <li>Java</li>
+                                <li>C#</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                        <b>DATABASE</b>                        
+                    </div>
+                    <div class="row " style="font-size: 1.1rem;">
+                       <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                       <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ">                        
+                           <ul>
+                               <li><i class="fa-solid fa-database"></i>MySQL</li>
+                           </ul>
+                       </div>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                        <b>FRAME WORK</b>                        
+                    </div>
+                    <div class="row " style="font-size: 1.1rem;">
+                       <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+                       <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ">                        
+                           <ul>
+                               <li>.Net</li>
+                           </ul>
+                       </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="btn bg-success" id="Qualification_btn" style="font-size: 1.5rem; width: 10rem;" > Qualification</div>                     
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="btn bg-success" id="biodata_btn" style="font-size: 1.5rem;width: 10rem;"> Bio Data</div>                     
+                    </div>
+
+                    <div class="row d-flex justify-content-center" style="font-size: 1.2rem;">
+                        <b>Social Media</b>                        
+                    </div>
+                    <div class="row " style="font-size: 1.1rem;">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center" style="gap: 2rem;">
+                            <a ><i class="fa-brands fa-github media_icons three_icons"></i></a>
+                            <a ><i class="fa-brands fa-linkedin media_icons three_icons"></i></a>                            
+                            <a><i class="fa-brands fa-instagram media_icons three_icons"></i></a>
+                        </div>
+                        
+                    </div>  
+                                     
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" id=" right_grid">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+                            <p style="font-size: 1.2rem; "> <b>PROFILE SUMMARY </b></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                        <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11" style="font-size: 1.1rem; ">
+                            <ul>
+                                <li>Passionate about coding and committed to continuously improving skills and staying up-to-date with industry trends.</li>
+                                <li>Fixed bugs and customer issues and enhanced the product.</li>
+                                <li>Collaborated with senior engineers in designing the account creation module in the project.</li>
+                                <li>knowledge in functional databases, applications, and servers to support WebApp on the back-end.</li>
+                                <li>I have knowledge of the <b>Jira ticketing tool, Github, Bitbucket</b>, and bit knowledge of <b>agile and waterfall</b> methodology.</li>
+                                <li>I have good knowledge in <b>dotNet frame work</b> to connect front end and back end, knowledge in passing the parameter through the URL, and good understanding in <b> MVC Flow</b>. and very good knowledge in <b>Java programming</b>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+                            <p style="font-size: 1.2rem; "><b>INTERNSHIP PROGRAM & MINI_PROJECT</b></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                        <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11" style="font-size: 1.1rem; ">
+                            <ul>
+                                <li>I have created a sample resume format in HTML, using simple flex and grid systems with popup modals and using datatables. and using Java script and jQuery as a script language with responsive page.</li>
+                                <li>I have successfully done my six-month internship program as a JAVA Full Stack developer in UNIQ Technology in Chennai.</li>
+                                <li>I have done my first Mini Project for creating School Web site using HTML, CSS, Java Script, JSP , JAVA and MySQL.</li>
+                                <li>Project on 'Two way Traffic Light Signal' using Arduino IDE with C - Programming.</li>
+                                <li>Final Year Project on 'Portable Camera Based assistive text label reading from Hand- Held objects for Blind Peoples' using Raspberry pi4.</li>
+                                <li>Creating a student web application using the.Net Framework included CRUD operations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+                            <div class="btn float-right btn-primary" id="about_page_btn">About this Page</div>
+                        </div>
+                    </div>
+                </div> 
+            </div>                       
+        </div>
+        <!-- Qualification  modal -->
+        <div class="modal fade" id="Qualification_modal" tabindex="-1" role="dialog" aria-labelledby="QualificationModalLabel" >
+            <div class="modal-dialog modal_custom" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="QualificationModalLabel">Educational qualifications</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                   
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-success" id="display_qualification_btn" style="width: 15rem; position: relative; left: 10rem;" data-toggle="collapse" data-target="#Qualification_card_body_2" aria-expanded="true" aria-controls="Qualification_card_body_2">
+                                        Display Qualification
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="Qualification_card_body_2" class="collapse show">
+                                <div class="card-body">
+                                    <table id="dataTable" class="table table-striped mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Degree</th>
+                                                <th>institution Name</th>
+                                                <th>CGPA or %</th>
+                                                <th>Year of Passing</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>BE-ECE</td>
+                                                <td>Karpagam College of Engineering,Coimbatore</td>
+                                                <td>7.46 CGPA</td>
+                                                <td>2017 - 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HSE(SB)</td>
+                                                <td>Mangalam Higher Secondary School, Erode</td>
+                                                <td>79.30%</td>
+                                                <td>2016 - 2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SSLC(SB)</td>
+                                                <td>Adharsh Vidhyalaya Higher Secondary School,Erode</td>
+                                                <td>92%</td>
+                                                <td>2014 - 2015</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="add_Qualification_card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-success" id="add_qualification_btn" style="width: 15rem; position: relative; left: 10rem;" data-toggle="collapse" data-target="#Qualification_card_body_1" aria-expanded="false" aria-controls="Qualification_card_body_1">
+                                        Add Qualification
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="Qualification_card_body_1" class="collapse">
+                                <div class="card-body">
+                                    <form id="qualification_form">
+                                        <div class="form-group">
+                                            <label for="degree"><b>Degree</b></label>
+                                            <input type="text" class="form-control border-danger" oninput="degree_function()"  required="required" placeholder="Enter degree and board of Education" id="degree">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="institution"><b>Institution Name</b></label>
+                                            <input type="text" class="form-control border-danger" oninput="institution_function()"required="required" placeholder="Enter institution Name" id="institution">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mark"><b>CGPA or %</b></label>
+                                            <input type="text" class="form-control border-danger" oninput="mark_function()" required="required" placeholder="Enter CGPA or %" id="mark">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_out"><b>Year of Passing</b></label>
+                                            <input type="text" class="form-control border-danger" oninput="pass_out_function()" required="required" placeholder="Enter Year of Passing" id="pass_out">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn btn-primary float-right" id="modal1_save">Save</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BIO DATA modal -->
+        <div class="modal fade" id="bio_data_modal" tabindex="-1" role="dialog" aria-labelledby="biodataModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal_custom" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="biodataModalLabel">Bio Data</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                        
+        
+                        <table id="biodata_table" class="table table-striped mt-3">
+                            <tr><th>Name</th><td> Prithivanan P</td></tr>
+                            <tr><th>Mobile Number</th><td>+91 97918 91099</td></tr>
+                            <tr><th>Email</th><td> prithivananofficial@gmail.com</td></tr>
+                            <tr><th>Programming Language</th><td>Java, C#</td></tr>
+                            <tr><th>DataBase</th><td>MySQL (R-DBMS)</td></tr>
+                            <tr><th>Web Interfaces</th><td>HTML, CSS, Bootstrap 4</td></tr>
+                            <tr><th>Script Languages</th><td>Java Script, jQuery</td></tr>
+                            <tr><th>Date of Birth</th><td>28/02/2000 </td></tr>
+                            <tr><th>BE(2021)</th><td>7.46CGPA </td></tr>
+                            <tr><th>HSE(2017)</th><td>79.3% </td></tr>
+                            <tr><th>SSLC(2015)</th><td>92% </td></tr>
+                            <tr><th>Language Known</th><td>Tamil, English</td></tr>                            
+                            <tr><th>Native</th><td>Erode</td></tr>
+                            <tr><th>Living in</th><td>Chennai</td></tr>
+                            
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Page modal -->
+        <div class="modal fade" id="about_page_modal" tabindex="-1" role="dialog" aria-labelledby="aboutpageModalLabel" aria-hidden="true">
+            <div class="modal-dialog about_modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutpageModalLabel">Whai I Done in this Web Page</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                       
+                        <ul style="margin-left: 2rem; font-size: 1.2rem;">
+                            <li><p>Creating <b>responsive</b> web pages using <b>Bootstrap 4 and CSS </b> It will align automatically based on the screen size.</p></li>
+                            <li><p>I used display <b>hover</b> using CSS. For example, when you move your mouse to the number row (page top) or address row, then hidden content will display. </p></li>
+                            <li><p><b>Grid system and flex</b> are used for page alignment.</p></li>
+                            <li><p>Using <b>Fontawesone icons and Sweet Alert </b> for popup alert messages</p></li>
+                            <li><p>I used <b>Java Script and jQuery </b> as a script language.</p></li>
+                            <li><p>Qualification and biodata buttens are used for <b>populating a modal </b></p></li>
+                            <li><p>Inside the Qualification, I used to create <b> two cards</b>, one for displaying my education qualification and another for adding new qualification data.</p></li>
+                            <li><p>My qualification contents are displayed <b>using data tables</b>. In add new qualification, I stored newly added data in <b>local storage</b>, then it will display in the data tables <b>without page refreshing</b>.</p></li>
+                            <li><p>Inside the form, I used <b>validation for every form input</b>. If form inputs are not added, when I click the save button, it will <b>pop up a sweet alert message for error</b>, and if successfully added, then <b>popup a sweet alert success message</b>.</p></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+    </div>    
+    <script>      
+        var table = $('#dataTable').DataTable();
+
+        $(document).ready(function(){
+            $('#about_page_modal').modal('show');
+
+            $('.three_icons').click(function(){
+                debugger
+                Swal.fire({
+                title: 'No Page Found',
+                text: 'social media link is not added',
+                imageUrl: './assets/img/dog-1.png', 
+                imageWidth: 300,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+                confirmButtonText: 'Close'
+                });
+            });
+            $('#about_page_btn').click(function(){
+                $('#about_page_modal').modal('show');
+            });
+
+            $("#Qualification_btn").click(function() {                
+                $("#Qualification_modal").modal('show');
+                loadTableData();
+            });
+            
+            $('#biodata_btn').click(function(){
+                $('#bio_data_modal').modal('show');
+            });
+            
+            $("#modal1_save").click(function(){
+                var institution_name = document.getElementById('institution').value;
+                var  mark = document.getElementById('mark').value;
+                var passed_out = document.getElementById('pass_out').value;
+                var degree = document.getElementById('degree').value;
+                if (!institution_name && !mark && !passed_out && !degree) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Please enter All Details!',
+                    });
+                    return;
+                }                
+                if (!degree || degree == " ") {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Enter Degree',
+                    });
+                    return;
+                }
+                if (!institution_name || institution_name == " ") {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Enter Institution Name',
+                    });
+                    return;
+                }                
+                if (!mark || mark == " ") {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Enter Mark',
+                    });
+                    return;
+                }                
+                if (!passed_out || passed_out == " ") {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Enter Year of Passed',
+                    });
+                    return;
+                }               
+               addData();          
+            });
+            var name = 'Prithivanan P';
+            var phone = '+91 97918 91099';
+            var alternat_phone = '+91 63822 89363';
+            var email = 'prithivananofficial@gmail.com';
+            var address = 'Kodambakkam,Chennai(Communication Address)';
+            var native_address = 'Appakudal,Erode(Native Address)';
+            $('#name').text(name);
+            $('#phone').text(phone);
+            $('#alternat_phone').text(alternat_phone);
+            $('#email').text(email);
+            $('#address').text(address);
+            $('#native_address').text(native_address);
+        });
+        function addData(){
+            var institution_name = document.getElementById('institution').value;
+            var  mark = document.getElementById('mark').value;
+            var passed_out = document.getElementById('pass_out').value;
+            var degree = document.getElementById('degree').value;
+            table.row.add([ degree, institution_name, mark, passed_out ]).draw();
+            swal.fire({
+                    title: "Good job!",
+                    text: "You data Successfully Added",
+                    icon: "success",
+            });    
+            saveToLocalStorage(degree, institution_name, mark,passed_out);       
+            resetqualificationform();
+        }
+        function resetqualificationform(){
+            $('#degree').val('');
+            $('#institution').val('');
+            $('#mark').val('');
+            $('#pass_out').val('');
+            document.getElementById('degree').classList.remove('border-success');
+            document.getElementById('degree').classList.add('border-danger');
+            document.getElementById('institution').classList.remove('border-success');
+            document.getElementById('institution').classList.add('border-danger');
+            document.getElementById('mark').classList.remove('border-success');
+            document.getElementById('mark').classList.add('border-danger');
+            document.getElementById('pass_out').classList.remove('border-success');
+            document.getElementById('pass_out').classList.add('border-danger');
+
+        }
+        
+        function saveToLocalStorage(degree, institution_name, mark, passed_out){
+            debugger
+            let data = JSON.parse(localStorage.getItem('Qualification_data')) || [];
+            data.push({ degree, institution_name, mark, passed_out});
+            localStorage.setItem('Qualification_data', JSON.stringify(data));
+        }
+
+        function loadTableData() {
+            debugger;
+            let data = JSON.parse(localStorage.getItem('Qualification_data')) || [];
+            data.forEach(item => {
+                table.row.add([
+                    item.degree,
+                    item.institution_name,
+                    item.mark,
+                    item.passed_out
+                ]).draw();
+            });
+        }
+
+        function institution_function(){            
+            var institution_name = document.getElementById('institution').value;
+            if(!institution_name || institution_name == " "){
+                document.getElementById('institution').classList.remove('border-success');
+                document.getElementById('institution').classList.add('border-danger');            
+            }
+            else{
+               // document.getElementById("institution").style.borderColor = "green";
+                document.getElementById('institution').classList.remove('border-danger');
+                document.getElementById('institution').classList.add('border-success');
+            }
+        }
+        function degree_function(){
+            var degree = document.getElementById('degree').value;
+            if(!degree || degree == " "){
+                document.getElementById('degree').classList.remove('border-success');
+                document.getElementById('degree').classList.add('border-danger');
+            }
+            else{
+                document.getElementById('degree').classList.remove('border-danger');
+                document.getElementById('degree').classList.add('border-success');
+            }
+        }
+        function mark_function(){
+            var  mark = document.getElementById('mark').value;
+            if(!mark || mark == " "){
+                document.getElementById('mark').classList.remove('border-success');
+                document.getElementById('mark').classList.add('border-danger');
+            }
+            else{
+                document.getElementById('mark').classList.remove('border-danger');
+                document.getElementById('mark').classList.add('border-success');
+            }
+        }
+        function pass_out_function(){
+            var pass_out = document.getElementById('pass_out').value;
+            if(!pass_out || pass_out == " "){
+                document.getElementById('pass_out').classList.remove('border-success');
+                document.getElementById('pass_out').classList.add('border-danger');
+            }
+            else{
+                document.getElementById('pass_out').classList.remove('border-danger');
+                document.getElementById('pass_out').classList.add('border-success');
+            }
+
+        }
+
+    </script>
+    
+    
+</body>
+</html>
